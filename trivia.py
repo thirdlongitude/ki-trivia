@@ -76,7 +76,7 @@ def w101_wiz_city(driver):
         'What are the school colors of Balance?': 'Tan and Maroon',
         'What does every Rotting Fodder in the Dark Caves carry with them?': 'A spade',
         'What is Diego\'s full name?': 'Diego Santiago Quariquez Ramirez the Third',
-        'What is something that the gobblers are NOT stockpiling in Colossus Way?': 'Broccoli',
+        'What is something that the Gobblers are NOT stockpiling in Colossus Way?': 'Broccoli',
         'What is the gemstone for Balance?': 'Citrine',
         'What is the name of the bridge in front of the Cave to Nightside?': 'Rainbow Bridge',
         'What is the name of the grandfather tree?': 'Bartleby',
@@ -103,7 +103,7 @@ def w101_adventuring(driver):
     qa_dict = {
         'An unmodified Sun Serpent does what?': '900 + 1000 Fire Damage + 300 Fire Damage to entire team',
         'How long do you have to wait to join a new match after fleeing in PVP?': '5 minutes',
-        'In Grizzleheim, the Ravens want to bring about:': 'The Everwinter, to cover the world in ice',
+        'In Grizzleheim, the Ravens want to bring about:': 'The Everwinter, to cover the world in ice:',
         'Shaka Zebu is known best as:': 'The Greatest Living Zebra Warrior',
         'Who is in the top level of the Tower of the Helephant?': 'Lyon Lorestriker',
         'What determines the colors of the manders in Krok?': 'Where they come from and their school of focus.',
@@ -113,7 +113,7 @@ def w101_adventuring(driver):
         'Which of these are not a lore spell?': 'Fire Dragon',
         'What is the name of the book stolen from the Royal Museum?': 'The Krokonomicon',
         'What school is the Gurtok Demon focused on?': 'Balance',
-        'What school is the spell Dark Nova?': 'Shadow',
+        'What school is the spell Dark Nova': 'Shadow',
         'What does the Time Ribbon Protect against?': 'Time Flux',
         'What type of rank 8 spell is granted to Death students at level 58?': 'Damage + DoT',
         'What hand does Lady Oriel hold her wand in?': 'Trick question, she has a sword.',
@@ -203,7 +203,7 @@ def w101_mystical(driver):
         'Thaddeus Price is the Pigswick Academy Professor of what school?': 'Tempest',
         'Who was the greatest Aquilan Gladiator of all time?': 'Dimachaerus',
         'What was Ponce de Gibbon looking for in Azteca?': 'The Water of Life',
-        'Who haunts the Night Warren?': 'Nosferabbit',
+        'Who haunts the Night Warrens?': 'Nosferabbit',
         'Who tells you how to get to Aquila?': 'Harold Argleston'
     }
 
@@ -262,7 +262,8 @@ def w101_spellbinding(driver):
     #     'Which Greek god is the god of fertility and wine?': 'Dionysus',
     #     'Which Greek god is the protector of all waters?': 'Poseidon',
     #     'Which Greek god is the goddess of youth?': 'Hebe',
-    #     '': '', '': '', '': '', '': '', '': ''
+    #     'Which Greek god is the goddess of love, desire and beauty?': 'Aphrodite',
+    #     '': '', '': '', '': '', '': ''
     #     }
 #
 #     driver.get("TODO_URL")
@@ -315,8 +316,8 @@ def w101_spellbinding(driver):
     #     '"You don\'t know about me without you have read a book by the name of \'The Adventures of Tom Sawyer\'; but that ain\'t no matter. That book was made by a Mr Mark Twain, and he told the truth, mainly."': 'The Adventures of Huckleberry Finn',
     #     '"In spite of everything I still believe that people are really good at heart"': 'The Diary of Anne Frank',
     #     '"I\'m not afraid of storms, for I\'m learning how to sail my ship."': 'Little Women',
-    #     '': '',
-    #     '': ''
+    #     '"I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It\'s when you know you\'re licked before you begin but you begin anyway and you see it through no matter what."': 'To Kill a Mockingbird',
+    #     '"It was a pleasure to burn."': 'Farenheit 451'
     #     }
 
 #     driver.get("TODO_URL")
