@@ -76,6 +76,7 @@ def w101_wiz_city(driver):
         'What are the school colors of Balance?': 'Tan and Maroon',
         'What does every Rotting Fodder in the Dark Caves carry with them?': 'A spade',
         'What is Diego\'s full name?': 'Diego Santiago Quariquez Ramirez the Third',
+        'What is Mindy\'s last name (she\'s on Colossus Blvd)?': 'Pixiecrown',
         'What is something that the Gobblers are NOT stockpiling in Colossus Way?': 'Broccoli',
         'What is the gemstone for Balance?': 'Citrine',
         'What is the name of the bridge in front of the Cave to Nightside?': 'Rainbow Bridge',
@@ -101,7 +102,7 @@ def w101_adventuring(driver):
     Autofills the W101 Adventuring Trivia
     """
     qa_dict = {
-        'An unmodified Sun Serpent does what?': '900 + 1000 Fire Damage + 300 Fire Damage to entire team',
+        'An unmodified Sun Serpent does what?': '900 � 1000 Fire Damage + 300 Fire Damage to entire team',
         'How long do you have to wait to join a new match after fleeing in PVP?': '5 minutes',
         'In Grizzleheim, the Ravens want to bring about:': 'The Everwinter, to cover the world in ice:',
         'Shaka Zebu is known best as:': 'The Greatest Living Zebra Warrior',
@@ -240,85 +241,88 @@ def w101_spellbinding(driver):
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-spellbinding-trivia")
     fill_answers(driver, qa_dict)
 
-# def greek_myth(driver):
-#     """
-#     Autofills the Greek Mythology Trivia
-#     """
-    # qa_dict = {
-    #     'Which Greek god is the god of music, healing, light and truth?': 'Apollo',
-    #     'Which Greek god is the goddess of springtime?': 'Persephone',
-    #     'Which Greek god is the goddess of corn, grain and harvest?': 'Demeter',
-    #     'Which Greek god is the goddess of marriage and childbirth?': 'Hera',
-    #     'Which Greek is the sun titan?': 'Helios',
-    #     'Which Greek god is the god of war?': 'Ares',
-    #     'Which Greek god is the god of love?': 'Eros',
-    #     'Which Greek god is the ruler of the Olympian gods?': 'Zeus',
-    #     'Which Greek god is the goddess of discord?': 'Eris',
-    #     'Which Greek god is the god of fire and forge?': 'Hephaestus',
-    #     'Which Greek god is the lord of the underworld?': 'Hades',
-    #     'Which Greek god is the goddess of intelligence and the arts?': 'Athena',
-    #     'Which Greek god is the god of flocks and shepherds?': 'Pan',
-    #     'Which Greek god is the personification of death?': 'Thanatos',
-    #     'Which Greek god is the god of fertility and wine?': 'Dionysus',
-    #     'Which Greek god is the protector of all waters?': 'Poseidon',
-    #     'Which Greek god is the goddess of youth?': 'Hebe',
-    #     'Which Greek god is the goddess of love, desire and beauty?': 'Aphrodite',
-    #     '': '', '': '', '': '', '': ''
-    #     }
-#
-#     driver.get("TODO_URL")
-#     fill_answers(driver, qa_dict)
-#
-# def world_capitals(driver):
-#     """
-#     Autofills the World Capitals Trivia
-#     """
-    # qa_dict = {
-    #     'What is the capital of Brazil?': 'Brasilia',
-    #     'What is the capital of Italy?': 'Rome',
-    #     'What is the capital of Mexico?': 'Mexico City',
-    #     'What is the capital of Germany?': 'Berlin',
-    #     'What is the capital of Argentina?': 'Buenos Aires',
-    #     'What is the capital of The Bahamas?': 'Nassau',
-    #     'What is the capital of Egypt?': 'Cairo',
-    #     'What is the capital of Austria?': 'Vienna',
-    #     'What is the capital of Canada?': 'Ottawa',
-    #     'What is the capital of Japan?': 'Tokyo',
-    #     'What is the capital of Czech Republic?': 'Prague',
-    #     'What is the capital of Greece?': 'Athens',
-    #     'What is the capital of Denmark?': 'Copenhagen',
-    #     'What is the capital of India?': 'New Delhi',
-    #     'What is the capital of Belgium?': 'Brussels',
-    #     'What is the capital of Finland?': 'Helsinki',
-    #     'What is the capital of Cuba?': 'Havana',
-    #     'What is the capital of Hungary?': 'Budapest',
-    #     'What is the capital of China?': 'Beijing'
-    #     }
-#
-#     driver.get("https://www.wizard101.com/quiz/trivia/game/world-capitals-trivia")
-#     fill_answers(driver, qa_dict)
+def greek_myth(driver):
+    """
+    Autofills the Greek Mythology Trivia
+    """
+    qa_dict = {
+        'Which Greek god is the god of music, healing, light and truth?': 'Apollo',
+        'Which Greek god is the goddess of springtime?': 'Persephone',
+        'Which Greek god is the goddess of corn, grain and harvest?': 'Demeter',
+        'Which Greek god is the goddess of marriage and childbirth?': 'Hera',
+        'Which Greek is the sun titan?': 'Helios',
+        'Which Greek god is the god of war?': 'Ares',
+        'Which Greek god is the god of love?': 'Eros',
+        'Which Greek god is the ruler of the Olympian gods?': 'Zeus',
+        'Which Greek god is the goddess of discord?': 'Eris',
+        'Which Greek god is the god of fire and forge?': 'Hephaestus',
+        'Which Greek god is the lord of the underworld?': 'Hades',
+        'Which Greek god is the goddess of intelligence and the arts?': 'Athena',
+        'Which Greek god is the god of flocks and shepherds?': 'Pan',
+        'Which Greek god is the personification of death?': 'Thanatos',
+        'Which Greek god is the god of fertility and wine?': 'Dionysus',
+        'Which Greek god is the protector of all waters?': 'Poseidon',
+        'Which Greek god is the goddess of youth?': 'Hebe',
+        'Which Greek god is the goddess of love, desire and beauty?': 'Aphrodite',
+        '': '', '': '', '': '', '': ''
+        }
 
-# def book_quotes(driver):
-#     """
-#     Autofills the Book Quotes Trivia
-#     """
-    # qa_dict = {
-    #     '"Call me Ishmael."': 'Moby Dick',
-    #     '"I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous."': 'Frankenstein',
-    #     '"All grown-ups were once children - but only few of them remember it."': 'The Little Prince',
-    #     '"Most people were heartless about turtles because a turtle\'s heart will beat for hours after it has been cut up and butchered. But the old man thought, I have such a heart too."': 'The Old Man and the Sea',
-    #     '"Anything worth dying for is certainly worth living for."': 'Catch-22',
-    #     '"All animals are equal, but some animals are more equal than others."': 'Animal Farm',
-    #     '"The sky above the port was the color of television, tuned to a dead channel."': 'Neuromancer',
-    #     '"Not all those who wander are lost."': 'The Lord of the Rings',
-    #     '"I have been bent and broken, but - I hope - into a better shape."': 'Great Expectations',
-    #     '"Don\'t ever tell anybody anything. If you do, you start missing everybody."': 'The Catcher in the Rye',
-    #     '"You don\'t know about me without you have read a book by the name of \'The Adventures of Tom Sawyer\'; but that ain\'t no matter. That book was made by a Mr Mark Twain, and he told the truth, mainly."': 'The Adventures of Huckleberry Finn',
-    #     '"In spite of everything I still believe that people are really good at heart"': 'The Diary of Anne Frank',
-    #     '"I\'m not afraid of storms, for I\'m learning how to sail my ship."': 'Little Women',
-    #     '"I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It\'s when you know you\'re licked before you begin but you begin anyway and you see it through no matter what."': 'To Kill a Mockingbird',
-    #     '"It was a pleasure to burn."': 'Farenheit 451'
-    #     }
+    driver.get("https://www.wizard101.com/quiz/trivia/game/greek-mythology-trivia")
+    fill_answers(driver, qa_dict)
 
-#     driver.get("TODO_URL")
-#     fill_answers(driver, qa_dict)
+def world_capitals(driver):
+    """
+    Autofills the World Capitals Trivia
+    """
+    qa_dict = {
+        'What is the capital of Brazil?': 'Brasilia',
+        'What is the capital of Italy?': 'Rome',
+        'What is the capital of Mexico?': 'Mexico City',
+        'What is the capital of Germany?': 'Berlin',
+        'What is the capital of Argentina?': 'Buenos Aires',
+        'What is the capital of The Bahamas?': 'Nassau',
+        'What is the capital of Egypt?': 'Cairo',
+        'What is the capital of Austria?': 'Vienna',
+        'What is the capital of Canada?': 'Ottawa',
+        'What is the capital of Japan?': 'Tokyo',
+        'What is the capital of Czech Republic?': 'Prague',
+        'What is the capital of Greece?': 'Athens',
+        'What is the capital of Denmark?': 'Copenhagen',
+        'What is the capital of India?': 'New Delhi',
+        'What is the capital of Belgium?': 'Brussels',
+        'What is the capital of Finland?': 'Helsinki',
+        'What is the capital of Cuba?': 'Havana',
+        'What is the capital of Hungary?': 'Budapest',
+        'What is the capital of China?': 'Beijing',
+        'What is the capital of Australia?': 'Canberra',
+        'What is the capital of France?': 'Paris'
+        }
+
+    driver.get("https://www.wizard101.com/quiz/trivia/game/world-capitals-trivia")
+    fill_answers(driver, qa_dict)
+
+def book_quotes(driver):
+    """
+    Autofills the Book Quotes Trivia
+    """
+    qa_dict = {
+        '"Call me Ishmael."': 'Moby Dick',
+        '"I was benevolent and good; misery made me a fiend. Make me happy, and I shall again be virtuous."': 'Frankenstein',
+        '"All grown-ups were once children - but only few of them remember it."': 'The Little Prince',
+        '"Most people were heartless about turtles because a turtle\'s heart will beat for hours after it has been cut up and butchered. But the old man thought, I have such a heart too."': 'The Old Man and the Sea',
+        '"Anything worth dying for is certainly worth living for."': 'Catch-22',
+        '"All animals are equal, but some animals are more equal than others."': 'Animal Farm',
+        '"The sky above the port was the color of television, tuned to a dead channel."': 'Neuromancer',
+        '"Not all those who wander are lost."': 'The Lord of the Rings',
+        '"I have been bent and broken, but - I hope - into a better shape."': 'Great Expectations',
+        '"Don\'t ever tell anybody anything. If you do, you start missing everybody."': 'The Catcher in the Rye',
+        '"You don\'t know about me without you have read a book by the name of \'The Adventures of Tom Sawyer\'; but that ain\'t no matter. That book was made by a Mr Mark Twain, and he told the truth, mainly."': 'The Adventures of Huckleberry Finn',
+        '"In spite of everything I still believe that people are really good at heart"': 'The Diary of Anne Frank',
+        '"I\'m not afraid of storms, for I\'m learning how to sail my ship."': 'Little Women',
+        '"I wanted you to see what real courage is, instead of getting the idea that courage is a man with a gun in his hand. It\'s when you know you\'re licked before you begin but you begin anyway and you see it through no matter what."': 'To Kill a Mockingbird',
+        '"It was a pleasure to burn."': 'Farenheit 451',
+        '"It is to the credit of human nature that, except where its selfishness is brought into play, it loves more readily than it hates."': 'The Scarlet Letter'
+        }
+
+    driver.get("https://www.wizard101.com/quiz/trivia/game/book-quotes-trivia")
+    fill_answers(driver, qa_dict)

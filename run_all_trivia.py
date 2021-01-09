@@ -31,6 +31,12 @@ pause()
 trivia.w101_mystical(driver)
 pause()
 trivia.w101_spellbinding(driver)
+pause()
+trivia.greek_myth(driver)
+pause()
+trivia.world_capitals(driver)
+pause()
+trivia.book_quotes(driver)
 
 # ask for user input to quit webdriver session
 quit = '0'
