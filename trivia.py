@@ -36,6 +36,14 @@ def fill_answers(driver, qa_dict):
     # click on blue login/see results button
     driver.find_element_by_class_name('kiaccountsbuttonblue').click()
 
+def pause():
+    """
+    Asks for user input to continue to the next trivia quiz
+    """
+    keep_going = '0'
+    while keep_going != '1':
+        keep_going = input('press 1 to continue: ')
+
 def w101_spells(driver):
     """
     Autofills the W101 Spells Trivia
@@ -68,6 +76,8 @@ def w101_spells(driver):
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-spells-trivia")
     # call function to actually do the quiz
     fill_answers(driver, qa_dict)
+    # pause to login/do captcha, ask for user input to continue
+    pause()
 
 def w101_wiz_city(driver):
     """
@@ -98,6 +108,7 @@ def w101_wiz_city(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-wizard-city-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def w101_adventuring(driver):
     """
@@ -130,6 +141,7 @@ def w101_adventuring(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-adventuring-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def w101_conjuring(driver):
     """
@@ -153,6 +165,7 @@ def w101_conjuring(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-conjuring-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def w101_magical(driver):
     """
@@ -184,6 +197,7 @@ def w101_magical(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-magical-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def w101_mystical(driver):
     """
@@ -214,6 +228,7 @@ def w101_mystical(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-mystical-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def w101_spellbinding(driver):
     """
@@ -244,6 +259,7 @@ def w101_spellbinding(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/wizard101-spellbinding-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def greek_myth(driver):
     """
@@ -273,6 +289,7 @@ def greek_myth(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/greek-mythology-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def world_capitals(driver):
     """
@@ -304,6 +321,7 @@ def world_capitals(driver):
 
     driver.get("https://www.wizard101.com/quiz/trivia/game/world-capitals-trivia")
     fill_answers(driver, qa_dict)
+    pause()
 
 def book_quotes(driver):
     """
