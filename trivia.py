@@ -20,8 +20,10 @@ def fill_answers(driver, qa_dict):
 
         # loop through the options to find the right answer
         for option in answer_options:
+            # get option text
+            option_text = option.find_element_by_class_name('answerText').get_attribute('textContent').strip()
             # when right answer found
-            if answer_text in option.find_element_by_class_name('answerText').get_attribute('textContent').strip():
+            if answer_text == option_text:
                 # wait for the next button to become visible
                 next_button = WebDriverWait(driver, 10).until(lambda d: d.find_element_by_css_selector('button#nextQuestion.fadeIn'))
                 # click on the correct answer
@@ -102,8 +104,9 @@ def w101_adventuring(driver):
     Autofills the W101 Adventuring Trivia
     """
     qa_dict = {
-        # not the whole answer for below question; should be '900 � 1000 Fire Damage + 300 Fire Damage to entire team'
-        'An unmodified Sun Serpent does what?': '1000 Fire Damage + 300 Fire Damage to entire team',
+        # not the right answer for following question; should be '900 � 1000 Fire Damage + 300 Fire Damage to entire team'
+        # workaround because click() doesn't work on the right answer for some reason
+        'An unmodified Sun Serpent does what?': '440 + 351 Fire Damage over 3 Rounds to entire team',
         'How long do you have to wait to join a new match after fleeing in PVP?': '5 minutes',
         'In Grizzleheim, the Ravens want to bring about:': 'The Everwinter, to cover the world in ice:',
         'Shaka Zebu is known best as:': 'The Greatest Living Zebra Warrior',
