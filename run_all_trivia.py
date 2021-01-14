@@ -1,9 +1,8 @@
 """
 Script to run ten KI trivia functions provided by trivia.py
 """
-# test git
 # install selenium
-# download chromdriver and add to path
+# download chromedriver and add to path
 from selenium import webdriver
 import trivia
 
