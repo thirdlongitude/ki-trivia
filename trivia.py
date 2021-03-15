@@ -12,6 +12,7 @@ def fill_answers(driver, qa_dict):
     for i in range(12):
         # get question text
         question_text = driver.find_element_by_class_name('quizQuestion').text
+        ## print(question_text)
 
         # find corresponding answer from the dictionary and store it in a variable
         answer_text = qa_dict[question_text]
@@ -29,10 +30,13 @@ def fill_answers(driver, qa_dict):
                 next_button = WebDriverWait(driver, 10).until(lambda d: d.find_element_by_css_selector('button#nextQuestion.fadeIn'))
                 # click on the correct answer
                 option.find_element_by_class_name('answerBox').click()
+                ## print('checked box ' + str(i + 1))
                 break
 
         # click the next question button
+        ## print('clicking next ' + str(i + 1))
         next_button.click()
+        ## print('clicked next')
 
     # click on blue login/see results button
     driver.find_element_by_class_name('kiaccountsbuttonblue').click()
